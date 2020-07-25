@@ -41,8 +41,7 @@ public class GrammarExercise {
             if (s.equals("")) {
                 throw new RuntimeException("input not valid");
             }
-            s.chars().forEach((cInt) -> {
-                char c = (char) cInt;
+            s.chars().forEach((c) -> {
                 if (c < 'A' || c > 'Z') {
                     throw new RuntimeException("input not valid");
                 }
@@ -52,8 +51,3 @@ public class GrammarExercise {
         return Arrays.asList(dedupStrings);
     }
 }
-
-/*
-apple,juice,mother,people,beautiful,apple,dog
-cat,baby,smile,good,apple,beautiful,Dog,nice
- */
